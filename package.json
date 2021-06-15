@@ -18,5 +18,11 @@
   "bugs": {
     "url": "https://github.com/shafe03/s-ledger-website/issues"
   },
-  "homepage": "https://github.com/shafe03/s-ledger-website#readme"
+  "homepage": "https://github.com/shafe03/s-ledger-website#readme",
+  "dependencies": {
+    "scss": "^0.2.4"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5"
+  }
 }
