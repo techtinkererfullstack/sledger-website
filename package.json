@@ -1,0 +1,22 @@
+{
+  "name": "s-ledger-website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "html/index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "parcel html/index.html",
+    "build": "parcel build html/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shafe03/s-ledger-website.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shafe03/s-ledger-website/issues"
+  },
+  "homepage": "https://github.com/shafe03/s-ledger-website#readme"
+}
