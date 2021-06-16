@@ -143,6 +143,7 @@
   @include sections-common-styling;
 
   .operations {
+    max-width: 40rem;
     margin-top: 4rem;
     background-color: $primary-color-2;
     border-radius: 2rem;
@@ -156,6 +157,7 @@
         font-weight: 500;
         border: none;
         background-color: $primary-color-2;
+        transition: all 0.3s ease;
 
         &:hover {
           @include ancor-common-style;
@@ -168,29 +170,33 @@
       }
     }
 
-    .operations-content-container {
-      margin: 2rem;
+    .operations__content {
       @include flex;
+      display: none;
+    }
 
-      flex-direction: row;
-      .operations__content {
-        @include flex;
-        display: none;
+    .operations__content--1,
+    .operations__content--2,
+    .operations__content--3 {
+      padding: 5rem;
+
+      .operations__header {
+        color: $secondary-color-3;
+        font-size: $h3-mobile;
+        padding: 1rem;
+      }
+      .operations__icon {
+        margin-top: 5rem;
+        padding-bottom: 2rem;
       }
 
-      .operations__content--1,
-      .operations__content--2,
-      .operations__content--3 {
-        padding: 2rem;
-        .operations__icon {
-          margin-top: 10rem;
-          padding-bottom: 2rem;
-        }
-
-        a {
-          @include ancor-common-style;
-        }
+      a {
+        @include ancor-common-style;
       }
+    }
+
+    .operations__content--active {
+      display: flex;
     }
   }
 }
