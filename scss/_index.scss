@@ -8,9 +8,8 @@
   .nav-logo {
     a {
       font-size: 2rem;
-      font-weight: 800;
+      font-weight: 1000;
       color: $secondary-color-1;
-      text-shadow: 0.2rem 0.2rem 0.4rem $secondary-color-2;
       transition: all 0.3s ease;
       &:hover {
         zoom: 1.05;
@@ -198,5 +197,191 @@
     .operations__content--active {
       display: flex;
     }
+  }
+}
+.section-6 {
+  @include sections-common-styling;
+
+  .pricing {
+    max-width: 40rem;
+    margin-top: 4rem;
+    background-color: $primary-color-2;
+    border-radius: 2rem;
+
+    .pricing__tab-container {
+      display: flex;
+      justify-content: space-evenly;
+
+      .pricing__tab {
+        padding: 2rem;
+        font-weight: 500;
+        border: none;
+        background-color: $primary-color-2;
+        transition: all 0.3s ease;
+
+        &:hover {
+          @include ancor-common-style;
+        }
+      }
+
+      .pricing__tab--active {
+        @include active;
+        border-radius: 2rem;
+      }
+    }
+
+    .pricing__content {
+      @include flex;
+      display: none;
+    }
+
+    .pricing__content--1,
+    .pricing__content--2,
+    .pricing__content--3 {
+      padding: 5rem;
+
+      .pricing__header {
+        color: $secondary-color-3;
+        font-size: $h3-mobile;
+        text-transform: uppercase;
+      }
+
+      h2 {
+        padding: 2rem;
+      }
+
+      a {
+        @include ancor-common-style;
+      }
+
+      .pricing__plan {
+        li {
+          margin: 1rem;
+          @include flex;
+          flex-direction: row;
+          justify-content: flex-start;
+          i {
+            padding: 1rem;
+          }
+        }
+      }
+    }
+
+    .pricing__content--active {
+      display: flex;
+    }
+  }
+
+  a {
+    @include ancor-common-style;
+  }
+}
+
+.section-7 {
+  @include sections-common-styling;
+  color: $secondary-color-3;
+  font-weight: 500;
+  background-color: white;
+
+  .section-heading,
+  img {
+    margin-bottom: 3rem;
+  }
+
+  .quote-container {
+    display: flex;
+    padding: 1rem;
+    position: relative;
+
+    i {
+      font-size: $h3-mobile;
+      color: green;
+    }
+
+    .fa-quote-left {
+      padding-right: 10rem;
+      color: rgb(0, 23, 128);
+    }
+  }
+
+  .quote-content {
+    width: 70%;
+
+    .commented-person {
+      padding: 1rem;
+      opacity: 0.5;
+    }
+  }
+}
+
+.section-8 {
+  @include sections-common-styling;
+  text-align: left;
+
+  .section-heading {
+    margin-bottom: 3rem;
+    text-align: center;
+  }
+  .faq-container {
+    border-bottom: 1px solid $primary-color-3;
+    margin: 1rem;
+
+    .question-container {
+      display: flex;
+      text-align: left;
+      flex-direction: column;
+      padding: 0.5rem;
+      border-bottom: 1px solid $primary-color-3;
+      i {
+        font-size: 2rem;
+        padding: 1rem;
+      }
+
+      .question {
+        padding: 0.2rem;
+        &:hover {
+          cursor: pointer;
+          text-decoration: underline;
+          & i {
+            text-decoration: none;
+          }
+        }
+      }
+    }
+
+    p {
+      margin: 0rem 2rem 2rem 2rem;
+      margin-left: 3rem;
+    }
+    .hidden {
+      display: none;
+    }
+  }
+}
+
+.footer {
+  @include sections-common-styling;
+  background: $background-gradient-blue;
+  padding: 4rem 2rem 2rem 2rem;
+
+  h1 {
+    font-size: 2rem;
+    font-weight: 1000;
+    color: $primary-color-2;
+  }
+  .footer-nav {
+    padding: 2rem;
+    color: $primary-color-3;
+    opacity: 0.7;
+  }
+
+  h4 {
+    font-size: 1.4rem;
+    padding: 1rem;
+    color: $primary-color-3;
+  }
+
+  p {
+    color: $primary-color-3;
   }
 }
