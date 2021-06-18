@@ -1063,6 +1063,7 @@
   color: #393a3d;
   font-weight: 500;
   background-color: white;
+  position: relative;
 }
 
 .section-7 h1 {
@@ -1079,8 +1080,8 @@
 
 @media screen and (min-width: 950px) {
   .section-7 img {
-    -webkit-transform: translate(-10rem, 12rem) scale(1.5);
-            transform: translate(-10rem, 12rem) scale(1.5);
+    -webkit-transform: translate(-6rem, 6rem) scale(1.5);
+            transform: translate(-6rem, 6rem) scale(1.5);
   }
 }
 
@@ -1094,8 +1095,7 @@
 
 @media screen and (min-width: 950px) {
   .section-7 .quote-container {
-    background-color: #e9ecee;
-    width: 20rem;
+    display: none;
   }
 }
 
@@ -1118,9 +1118,11 @@
     width: 20%;
     position: inherit;
     background-color: #e9ecee;
+    padding: 0.2rem;
     z-index: 2;
-    -webkit-transform: translate(10rem, -20rem);
-            transform: translate(10rem, -20rem);
+    border-radius: 1rem;
+    -webkit-transform: translate(25rem, -22rem);
+            transform: translate(25rem, -22rem);
   }
 }
 
@@ -1162,6 +1164,26 @@
   margin: 1rem;
 }
 
+@media screen and (min-width: 950px) {
+  .section-8 .faq-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    max-width: 50rem;
+  }
+}
+
 .section-8 .faq-container .question-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1173,6 +1195,16 @@
           flex-direction: column;
   padding: 0.5rem;
   border-bottom: 1px solid #c9d1d6;
+}
+
+@media screen and (min-width: 950px) {
+  .section-8 .faq-container .question-container {
+    width: 80%;
+    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .section-8 .faq-container .question-container i {
@@ -1196,6 +1228,12 @@
 .section-8 .faq-container p {
   margin: 0rem 2rem 2rem 2rem;
   margin-left: 3rem;
+}
+
+@media screen and (min-width: 950px) {
+  .section-8 .faq-container p {
+    margin: 0;
+  }
 }
 
 .section-8 .faq-container .hidden {

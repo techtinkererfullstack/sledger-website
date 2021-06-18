@@ -526,6 +526,7 @@
   color: $secondary-color-3;
   font-weight: 500;
   background-color: white;
+  position: relative;
 
   .section-heading {
     margin-bottom: 3rem;
@@ -534,7 +535,7 @@
   img {
     margin-bottom: 3rem;
     @include media-desktop {
-      transform: translate(-10rem, 12rem) scale(1.5);
+      transform: translate(-6rem, 6rem) scale(1.5);
     }
   }
 
@@ -543,8 +544,7 @@
     padding: 1rem;
     position: relative;
     @include media-desktop {
-      background-color: $primary-color-2;
-      width: 20rem;
+      display: none;
     }
 
     i {
@@ -564,8 +564,10 @@
       width: 20%;
       position: inherit;
       background-color: $primary-color-2;
+      padding: 0.2rem;
       z-index: 2;
-      transform: translate(10rem, -20rem);
+      @include common-border-radius;
+      transform: translate(25rem, -22rem);
     }
 
     .commented-person {
@@ -586,6 +588,10 @@
   .faq-container {
     border-bottom: 1px solid $primary-color-3;
     margin: 1rem;
+    @include media-desktop {
+      @include flex;
+      max-width: 50rem;
+    }
 
     .question-container {
       display: flex;
@@ -593,6 +599,12 @@
       flex-direction: column;
       padding: 0.5rem;
       border-bottom: 1px solid $primary-color-3;
+      @include media-desktop {
+        width: 80%;
+        text-align: center;
+        justify-content: center;
+      }
+
       i {
         font-size: 2rem;
         padding: 1rem;
@@ -613,6 +625,9 @@
     p {
       margin: 0rem 2rem 2rem 2rem;
       margin-left: 3rem;
+      @include media-desktop {
+        margin: 0;
+      }
     }
     .hidden {
       display: none;
