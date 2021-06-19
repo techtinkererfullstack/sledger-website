@@ -224,6 +224,7 @@
         background-color: $primary-color-2;
         border-radius: 2rem;
         @include media-desktop {
+          width: 90rem;
           max-width: 100rem;
         }
 
@@ -265,6 +266,13 @@
             transform: translateY(10rem);
           }
 
+          .btn-learn-more {
+            @include ancor-common-style;
+            @include media-desktop {
+              transform: translateY(0rem);
+            }
+          }
+
           .operations__header {
             color: $secondary-color-3;
             font-size: $h3-mobile;
@@ -278,7 +286,7 @@
             }
           }
 
-          a {
+          .learn-more {
             @include ancor-common-style;
             @include media-desktop {
               transform: translateY(-26rem);
@@ -295,24 +303,52 @@
     .section-3 {
       @include sections-common-styling;
       text-align: center;
+      margin: 3rem 0;
       background: $background-gradient-green;
 
       .section-heading {
         color: $primary-color-1;
-        font-size: 3.5rem;
+        font-size: 3rem;
         padding-bottom: 2rem;
       }
+
+      .content-container {
+        @include flex;
+        @include media-desktop {
+          flex-direction: row;
+          padding: 0 20rem;
+        }
+
+        .content {
+          margin-top: 1rem;
+          text-align: center;
+          color: $primary-color-1;
+          padding: 0.5rem 3rem;
+          @include media-desktop {
+            width: 50%;
+          }
+
+          h3 {
+            padding: 1rem;
+            font-weight: 500;
+            color: $primary-color-1;
+          }
+        }
+      }
+
       a {
-        margin-top: 2rem;
+        margin-top: 10rem;
         @include ancor-common-style;
         background: $secondary-color-3;
         @include media-desktop {
+          margin-top: 3rem;
           &:hover {
-            background: $background-gradient-green;
+            background: #000;
           }
         }
       }
     }
+
     .section-4 {
       @include sections-common-styling;
       @include media-desktop {
@@ -493,10 +529,13 @@
     .section-7 {
       @include sections-common-styling;
       text-align: left;
+      background-color: $secondary-color-3;
+      color: $primary-color-2;
 
       .section-heading {
         margin-bottom: 3rem;
         text-align: center;
+        color: $primary-color-2;
       }
       .faq-container {
         border-bottom: 1px solid $primary-color-3;
@@ -504,6 +543,7 @@
         @include media-desktop {
           @include flex;
           max-width: 50rem;
+          border-bottom: none;
         }
 
         .question-container {
@@ -514,7 +554,7 @@
           border-bottom: 1px solid $primary-color-3;
           @include media-desktop {
             width: 80%;
-            text-align: center;
+            text-align: left;
             justify-content: center;
           }
 
@@ -525,6 +565,8 @@
 
           .question {
             padding: 0.2rem;
+            color: $primary-color-2;
+            font-size: 1.8rem;
             &:hover {
               cursor: pointer;
               text-decoration: underline;
@@ -557,6 +599,9 @@
         font-size: 2rem;
         font-weight: 1000;
         color: $primary-color-2;
+        @include media-desktop {
+          text-align: left;
+        }
       }
       .footer-nav {
         padding: 2rem;

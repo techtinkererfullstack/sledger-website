@@ -789,6 +789,23 @@
   display: flex;
 }
 
+#home-page .section-5 .btn-all-features {
+  margin: 1rem;
+  display: block;
+  padding: 1rem;
+  color: #f4f6f7;
+  font-weight: 500;
+  background: -webkit-gradient(linear, left top, right top, from(#0b7e48), to(#3be286));
+  background: linear-gradient(to right, #0b7e48, #3be286);
+  border-radius: 5rem;
+  margin-top: 3rem;
+  background: #393a3d;
+}
+
+#home-page .section-5 .btn-all-features:hover {
+  background: #000;
+}
+
 #home-page .section-6 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1712,6 +1729,7 @@
 
 @media screen and (min-width: 950px) {
   #features-html .container .section-2 .operations {
+    width: 90rem;
     max-width: 100rem;
   }
 }
@@ -1791,6 +1809,28 @@
   }
 }
 
+#features-html .container .section-2 .operations .operations__content--1 .btn-learn-more,
+#features-html .container .section-2 .operations .operations__content--2 .btn-learn-more,
+#features-html .container .section-2 .operations .operations__content--3 .btn-learn-more {
+  margin: 1rem;
+  display: block;
+  padding: 1rem;
+  color: #f4f6f7;
+  font-weight: 500;
+  background: -webkit-gradient(linear, left top, right top, from(#0b7e48), to(#3be286));
+  background: linear-gradient(to right, #0b7e48, #3be286);
+  border-radius: 5rem;
+}
+
+@media screen and (min-width: 950px) {
+  #features-html .container .section-2 .operations .operations__content--1 .btn-learn-more,
+  #features-html .container .section-2 .operations .operations__content--2 .btn-learn-more,
+  #features-html .container .section-2 .operations .operations__content--3 .btn-learn-more {
+    -webkit-transform: translateY(0rem);
+            transform: translateY(0rem);
+  }
+}
+
 #features-html .container .section-2 .operations .operations__content--1 .operations__header,
 #features-html .container .section-2 .operations .operations__content--2 .operations__header,
 #features-html .container .section-2 .operations .operations__content--3 .operations__header {
@@ -1815,9 +1855,9 @@
   }
 }
 
-#features-html .container .section-2 .operations .operations__content--1 a,
-#features-html .container .section-2 .operations .operations__content--2 a,
-#features-html .container .section-2 .operations .operations__content--3 a {
+#features-html .container .section-2 .operations .operations__content--1 .learn-more,
+#features-html .container .section-2 .operations .operations__content--2 .learn-more,
+#features-html .container .section-2 .operations .operations__content--3 .learn-more {
   margin: 1rem;
   display: block;
   padding: 1rem;
@@ -1829,9 +1869,9 @@
 }
 
 @media screen and (min-width: 950px) {
-  #features-html .container .section-2 .operations .operations__content--1 a,
-  #features-html .container .section-2 .operations .operations__content--2 a,
-  #features-html .container .section-2 .operations .operations__content--3 a {
+  #features-html .container .section-2 .operations .operations__content--1 .learn-more,
+  #features-html .container .section-2 .operations .operations__content--2 .learn-more,
+  #features-html .container .section-2 .operations .operations__content--3 .learn-more {
     -webkit-transform: translateY(-26rem);
             transform: translateY(-26rem);
   }
@@ -1860,6 +1900,7 @@
   padding: 4rem 2rem 6rem 2rem;
   text-align: center;
   text-align: center;
+  margin: 3rem 0;
   background: -webkit-gradient(linear, left top, right top, from(#0b7e48), to(#3be286));
   background: linear-gradient(to right, #0b7e48, #3be286);
 }
@@ -1870,12 +1911,58 @@
 
 #features-html .container .section-3 .section-heading {
   color: #f4f6f7;
-  font-size: 3.5rem;
+  font-size: 3rem;
   padding-bottom: 2rem;
 }
 
+#features-html .container .section-3 .content-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+@media screen and (min-width: 950px) {
+  #features-html .container .section-3 .content-container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding: 0 20rem;
+  }
+}
+
+#features-html .container .section-3 .content-container .content {
+  margin-top: 1rem;
+  text-align: center;
+  color: #f4f6f7;
+  padding: 0.5rem 3rem;
+}
+
+@media screen and (min-width: 950px) {
+  #features-html .container .section-3 .content-container .content {
+    width: 50%;
+  }
+}
+
+#features-html .container .section-3 .content-container .content h3 {
+  padding: 1rem;
+  font-weight: 500;
+  color: #f4f6f7;
+}
+
 #features-html .container .section-3 a {
-  margin-top: 2rem;
+  margin-top: 10rem;
   margin: 1rem;
   display: block;
   padding: 1rem;
@@ -1888,9 +1975,11 @@
 }
 
 @media screen and (min-width: 950px) {
+  #features-html .container .section-3 a {
+    margin-top: 3rem;
+  }
   #features-html .container .section-3 a:hover {
-    background: -webkit-gradient(linear, left top, right top, from(#0b7e48), to(#3be286));
-    background: linear-gradient(to right, #0b7e48, #3be286);
+    background: #000;
   }
 }
 
@@ -2288,6 +2377,8 @@
   padding: 4rem 2rem 6rem 2rem;
   text-align: center;
   text-align: left;
+  background-color: #393a3d;
+  color: #e9ecee;
 }
 
 #features-html .container .section-7 h1 {
@@ -2297,6 +2388,7 @@
 #features-html .container .section-7 .section-heading {
   margin-bottom: 3rem;
   text-align: center;
+  color: #e9ecee;
 }
 
 #features-html .container .section-7 .faq-container {
@@ -2321,6 +2413,7 @@
             align-items: center;
     text-align: center;
     max-width: 50rem;
+    border-bottom: none;
   }
 }
 
@@ -2340,7 +2433,7 @@
 @media screen and (min-width: 950px) {
   #features-html .container .section-7 .faq-container .question-container {
     width: 80%;
-    text-align: center;
+    text-align: left;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -2354,6 +2447,8 @@
 
 #features-html .container .section-7 .faq-container .question-container .question {
   padding: 0.2rem;
+  color: #e9ecee;
+  font-size: 1.8rem;
 }
 
 #features-html .container .section-7 .faq-container .question-container .question:hover {
@@ -2409,6 +2504,12 @@
   font-size: 2rem;
   font-weight: 1000;
   color: #e9ecee;
+}
+
+@media screen and (min-width: 950px) {
+  #features-html .container .footer h1 {
+    text-align: left;
+  }
 }
 
 #features-html .container .footer .footer-nav {

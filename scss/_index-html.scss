@@ -396,6 +396,15 @@
         display: flex;
       }
     }
+
+    .btn-all-features {
+      @include ancor-common-style;
+      margin-top: 3rem;
+      background: $secondary-color-3;
+      &:hover {
+        background: #000;
+      }
+    }
   }
   .section-6 {
     @include sections-common-styling;

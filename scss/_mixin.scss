@@ -75,7 +75,7 @@
   }
 }
 @mixin large-screen() {
-  @media screen and (min-width: $media-largescreen) and (max-width: 1366px) {
+  @media screen and (min-width: $media-largescreen) {
     @content;
   }
 }
