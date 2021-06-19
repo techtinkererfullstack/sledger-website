@@ -42,3 +42,40 @@
   color: $secondary-color-3;
   background: $background-gradient-green;
 }
+
+@mixin common-padding {
+  padding: 4rem 10rem 8rem 10rem;
+}
+
+@mixin max-width {
+  max-width: 1325;
+}
+
+@mixin common-border {
+  border: 1px solid $primary-color-3;
+}
+
+@mixin common-border-radius {
+  border-radius: 1rem;
+}
+
+@mixin media-tiny-screen() {
+  @media screen and (max-width: $media-mobile-sm) {
+    @content;
+  }
+}
+@mixin media-table() {
+  @media screen and (min-width: $media-tablet) {
+    @content;
+  }
+}
+@mixin media-desktop() {
+  @media screen and (min-width: $media-desktop) {
+    @content;
+  }
+}
+@mixin large-screen() {
+  @media screen and (min-width: $media-largescreen) {
+    @content;
+  }
+}
