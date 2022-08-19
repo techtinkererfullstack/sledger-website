@@ -2,7 +2,7 @@
   "name": "s-ledger-website",
   "version": "1.0.0",
   "description": "",
-  "main": "html/index.html",
+  "default": "html/index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "parcel html/index.html",
@@ -20,7 +20,8 @@
   },
   "homepage": "https://github.com/shafe03/s-ledger-website#readme",
   "dependencies": {
-    "scss": "^0.2.4"
+    "scss": "^0.2.4",
+    "uninstall": "^0.0.0"
   },
   "devDependencies": {
     "parcel-bundler": "^1.12.5"
